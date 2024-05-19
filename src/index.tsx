@@ -9,12 +9,12 @@ function App() {
     register,
     handleSubmit,
     watch,
-    formState: { errors }
+    formState: { errors },
   } = useForm({
     defaultValues: {
       example: "",
-      exampleRequired: ""
-    }
+      exampleRequired: "",
+    },
   });
 
   console.log(watch("example")); // you can watch individual input by pass the name of the input
